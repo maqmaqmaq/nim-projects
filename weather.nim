@@ -9,7 +9,7 @@ type
     description: string
 
 proc fetchWeatherData(city: string): WeatherData =
-  var url = "http://api.openweathermap.org/data/2.5/weather?q=" & city & "&appid=086fab05bd4692c8025f5d6843b40ad6"
+  var url = "http://api.openweathermap.org/data/2.5/weather?q=" & city & "&appid=xxx"
 
   var client = newHttpClient()
   var response = client.get(url)
